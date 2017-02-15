@@ -1,0 +1,35 @@
+﻿<Application
+    x:Class="Zappie.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Zappie"
+    RequestedTheme="Light">
+
+    <Application.Resources>
+        
+        <DataTemplate x:Key="ZappieTemplate">
+            
+            <StackPanel Orientation="Horizontal">
+
+                <StackPanel Background="#1eb9bd" Orientation="Vertical" Padding="10,8,8,3" MinWidth="50" CornerRadius="4" Margin="0,10,0,0" MaxWidth="300">
+                    <TextBlock FontSize="15" TextWrapping="Wrap" Foreground="White" Text="{Binding body}"></TextBlock>
+                    <TextBlock HorizontalAlignment="Right" FontSize="9" Foreground="White" Text="{Binding timestamp}"></TextBlock>
+                </StackPanel>
+            </StackPanel>
+            
+        </DataTemplate>
+
+        <DataTemplate x:Key="UserTemplate">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                <StackPanel Background="#FFFFFFFF" Orientation="Vertical" Padding="10,8,8,3" MinWidth="50" CornerRadius="4" Margin="0,10,0,0" MaxWidth="300" HorizontalAlignment="Right">
+                    <TextBlock FontSize="15" TextWrapping="Wrap" Text="{Binding body}"></TextBlock>
+                    <TextBlock HorizontalAlignment="Right" FontSize="9" Text="{Binding timestamp}"></TextBlock>
+                </StackPanel>
+            </StackPanel>
+        </DataTemplate>
+
+    </Application.Resources>
+
+</Application>
+
+
